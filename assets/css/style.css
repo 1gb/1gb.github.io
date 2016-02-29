@@ -64,7 +64,7 @@
       ========================================================================== */
 
    div.background {
-     background: url('/img/back.jpg') center 0 no-repeat fixed;
+     background: url(../img/back.jpg) center 0 no-repeat fixed;
      background-size: cover;
      background-position: center center;
    }
@@ -116,11 +116,11 @@
      width: 66px;
      margin-top: 10px;
      display: block;
-     background: transparent url('/img/logo.png') center top no-repeat;
+     background: transparent url(../img/logo.png) center top no-repeat;
    }
 
    .logo:hover {
-     background-image: url('/img/logohover.png');
+     background-image: url(../img/logohover.png);
    }
 
    .navbar-default .navbar-brand {
