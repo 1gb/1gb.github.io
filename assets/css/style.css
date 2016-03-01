@@ -13,285 +13,229 @@
    Base Styles, Bootstrap Modifications & Fonts Import
    ========================================================================== */
 
-   @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-   @import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
 
-   ::-moz-selection {
-     background: #f2c2c9;
-     color: #a4003a;
-     text-shadow: none;
-   }
+::-moz-selection {
+  background: #16a085;
+  color: #a4003a;
+  text-shadow: none;
+}
 
-   ::selection {
-     background: #16a085;
-     color: #a4003a;
-     text-shadow: none;
-   }
-
-
-   /*
-    * A better looking default horizontal rule
-    */
-
-   hr {
-     display: block;
-     height: 1px;
-     border: 0;
-     border-top: 1px solid #ccc;
-     margin: 1em 0;
-     padding: 0;
-   }
-
-   .centered {
-     text-align: center
-   }
-
-   .mt {
-     margin-top: 80px;
-   }
-
-   .mb {
-     margin-bottom: 80px;
-   }
-
-   .smallspace {
-     margin-top: 40px;
-   }
+::selection {
+  background: #16a085;
+  color: #a4003a;
+  text-shadow: none;
+}
 
 
-   /* ==========================================================================
-      General styles
-      ========================================================================== */
+/*
+ * A better looking default horizontal rule
+ */
 
-   div.background {
-     background: url('/assets/img/back.jpg') center 0 no-repeat fixed;
-     background-size: cover;
-     background-position: center center;
-   }
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
 
-   body {
-     font-family: 'Montserrat', sans-serif;
-     font-weight: 400;
-     font-size: 16px;
-     background-color: #DB4493;
-     /*   background: url(http://i.imgur.com/xlRiAbQ.jpg)  50% 0 repeat fixed; min-height: 1000px;  */
-     -webkit-font-smoothing: antialiased;
-     -webkit-overflow-scrolling: touch;
-     text-align: center;
-     background-attachment: relative;
-     background-position: center center;
-     min-height: 550px;
-     width: 100%;
-     -webkit-background-size: 100%;
-     -moz-background-size: 100%;
-     -o-background-size: 100%;
-     background-size: 100%;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-   }
+.centered {
+  text-align: center
+}
 
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   h6 {
-     font-weight: 700;
-     color: #FFEDED;
-   }
+.mt {
+  margin-top: 80px;
+}
 
-   p {
-     color: #FFEDED;
-   }
+.mb {
+  margin-bottom: 80px;
+}
 
-   .navbar {
-     font-family: 'Gloria Hallelujah', cursive;
-     font-size: 22px;
-   }
-
-   .logo {
-     height: 51px;
-     width: 66px;
-     margin-top: 10px;
-     display: block;
-     background: transparent url('/assets/img/logo.png') center top no-repeat;
-   }
-
-   .logo:hover {
-     background-image: url('/assets/img/logohover.png');
-
-   }
-
-   .navbar-default .navbar-brand {
-     color: #1abc9c;
-   }
-
-   .navbar-default {
-     background-color: transparent;
-     border-color: transparent;
-   }
-
-   .navbar-default .navbar-nav > .active > a,
-   .navbar-default .navbar-nav > .active > a:hover,
-   .navbar-default .navbar-nav > .active > a:focus {
-     color: #1abc9c;
-     background-color: transparent;
-     border-bottom: 2px solid #1abc9c
-   }
-
-   .navbar-default .navbar-nav > li > a {
-     color: #1abc9c;
-   }
-
-   .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-       color: #FFEDED;
-   }
-
-   .navbar-default .navbar-toggle .icon-bar {
-     background-color: #1abc9c;
-   }
+.smallspace {
+  margin-top: 60px;
+}
 
 
-   /* ==========================================================================
-      Wrap Sections
-      ========================================================================== */
+/* ==========================================================================
+   General styles
+   ========================================================================== */
 
-   #headerwrap {
-     /*	background: url(http://i.imgur.com/xlRiAbQ.jpg) no-repeat center ;
-     background-attachment: fixed;
-   	margin-top: -70px; */
-     padding-top: 150px;
-     text-align: center;
-     background-attachment: relative;
-     background-position: center center;
-     min-height: 650px;
-     width: 100%;
-     -webkit-background-size: 100%;
-     -moz-background-size: 100%;
-     -o-background-size: 100%;
-     background-size: 100%;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-   }
+.background {
+  background: url(http://eveworthington.com/assets/img/back.jpg) center 0 no-repeat fixed;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
 
-   #meeve {
-     max-width: 50%;
-     margin: 0 auto;
-     border-color: #FFEDED;
-     border-width: 10px;
-     border-style: solid;
-   }
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #E66383;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+  background-position: center center;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-   #headerwrap h1 {
-     color: #FFEDED;
-     padding-top: 10px;
-     padding-bottom: 20px;
-     letter-spacing: 4px;
-     font-size: 56px;
-     font-weight: bold;
-   }
+a {
+  color: #1abc9c;
+}
 
-   #headerwrap h3 {
-     color: #0892A5;
-   }
+a:hover {
+  color: #FFEDED;
+}
 
-   #headerwrap h4 {
-     font-weight: 400;
-     color: #FFEDED;
-   }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #FFEDED;
+}
 
-   #social {
-     padding-top: 50px;
-     padding-bottom: 50px;
-     background-color: #0892A5;
-   }
+p {
+  color: #FFEDED;
+}
 
-   #social i {
-     font-size: 60px;
-     color: #FFEDED;
-   }
+.navbar {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 22px;
+}
 
-   #social i:hover {
-     color: #1abc9c
-   }
+.logo {
+  height: 51px;
+  width: 66px;
+  margin-top: 10px;
+  display: block;
+  background: transparent url('http://eveworthington.com/assets/img/logo.png') center top no-repeat;
+}
 
-   #footerwrap {
-     padding-top: 70px;
-     padding-bottom: 50px;
-     background-color: #E66383;
-   }
+.logo:hover {
+  background-image: url('http://eveworthington.com/assets/img/logohover.png');
+}
 
-   #footerwrap p {
-     color: #FFEDED;
-     margin-left: 10px;
-   }
+.navbar-default .navbar-brand {
+  color: #1abc9c;
+}
 
-   #workwrap {
-     /* background: url(../img/work.jpg) no-repeat center top;
-   	margin-top: -70px;
-   	padding-top: 250px;  */
-     text-align: center;
-     background-attachment: relative;
-     background-position: center center;
-     min-height: 650px;
-     width: 100%;
-     -webkit-background-size: 100%;
-     -moz-background-size: 100%;
-     -o-background-size: 100%;
-     background-size: 100%;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-   }
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}
 
-   #workwrap h1 {
-     color: #FFEDED;
-     padding-top: 10px;
-     padding-bottom: 20px;
-     letter-spacing: 4px;
-     font-size: 80px;
-     font-weight: bold;
-   }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #1abc9c;
+  background-color: transparent;
+  border-bottom: 2px solid #1abc9c
+}
 
-   #workwrap h4 {
-     font-weight: 400;
-     color: #FFEDED
-   }
+.navbar-default .navbar-nav > li > a {
+  color: #1abc9c;
+}
 
-   #aboutwrap {
-     /* margin-top: -70px;
-   	padding-top: 250px; */
-     text-align: center;
-     background-attachment: relative;
-     background-position: center center;
-     min-height: 550px;
-     width: 100%;
-     -webkit-background-size: 100%;
-     -moz-background-size: 100%;
-     -o-background-size: 100%;
-     background-size: 100%;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-   }
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #FFEDED;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #1abc9c;
+}
 
 
-   /* Gallery */
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
 
-   .hold {
-     height:
-   }
+#headerwrap {
+  padding-top: 150px;
+}
 
-   .gallery {
-     margin-top: 30px;
-   }
+#meeve {
+  margin: 0 auto;
+  border-color: #FFEDED;
+  border-width: 10px;
+  border-style: solid;
+}
 
-   .gallery img:hover {
-     opacity: 0.4;
-   }
+#headerwrap.h1 {
+  color: #FFEDED;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  letter-spacing: 4px;
+  font-size: 56px;
+  font-weight: bold;
+}
+
+#headerwrap.h3 {
+  color: #FFEDED;
+}
+
+#headerwrap.h4 {
+  font-weight: 400;
+  color: #FFEDED;
+}
+
+#social {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #E66383;
+}
+
+#social i {
+  font-size: 50px;
+  color: #FFEDED;
+}
+
+#social i:hover {
+  color: #1abc9c
+}
+
+#footerwrap {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: #E66383;
+}
+
+#footerwrap p {
+  color: #FFEDED;
+  margin-left: 10px;
+}
+
+#workwrap {
+  text-align: center;
+}
+
+#workwrap.h1 {
+  background-color: #E66383;
+  color: #FFEDED;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  letter-spacing: 4px;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+
+
+/* Gallery */
+
+.gallery {
+  margin-top: 30px;
+}
+
+.gallery img:hover {
+  opacity: 0.4;
+}
