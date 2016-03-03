@@ -191,16 +191,16 @@ p {
 #social {
   padding-top: 20px;
   padding-bottom: 30px;
-  background-color: #E66383;
+  background-color: #117964;
 }
 
 #social i {
-  font-size: 50px;
+  font-size: 40px;
   color: #FFEDED;
 }
 
 #social i:hover {
-  color: #1abc9c
+  color: #1abc9c;
 }
 
 #footerwrap {
