@@ -1,0 +1,518 @@
+/*!
+ * Start Bootstrap - Grayscale v3.3.7+1 (http://startbootstrap.com/template-overviews/grayscale)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: #262626;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+p {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  p {
+    margin: 0 0 35px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+a {
+  color: #42DCA3;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #1d9b6c;
+}
+.light {
+  font-weight: 400;
+}
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #262626;
+}
+.navbar-custom .navbar-toggle {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+}
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:active {
+  outline: none;
+}
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+.navbar-custom .navbar-brand:focus {
+  outline: none;
+}
+.navbar-custom a {
+  color: white;
+}
+.navbar-custom .nav li a {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.navbar-custom .nav li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  background-color: transparent;
+}
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+  outline: none;
+  background-color: transparent;
+}
+.navbar-custom .nav li.active {
+  outline: none;
+}
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.navbar-custom .nav li.active a:hover {
+  color: white;
+}
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: transparent;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: #262626;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background-color: #262626;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.intro .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.intro .intro-body .brand-heading {
+  font-size: 40px;
+}
+.intro .intro-body .intro-text {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+  .intro .intro-body .brand-heading {
+    font-size: 100px;
+  }
+  .intro .intro-body .intro-text {
+    font-size: 26px;
+  }
+}
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+  padding: 7px 16px;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  font-size: 40px;
+  color: white;
+  background: transparent;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.btn-circle:hover,
+.btn-circle:focus {
+  outline: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+.btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+}
+.btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+.content-section {
+  padding-top: 100px;
+}
+.portfolio-section {
+  width: 100%;
+  height: 200px;
+  padding: 50px 0;
+  color: white;
+  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+  background-color: #262626;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+#map {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+}
+@media (min-width: 767px) {
+  .content-section {
+    padding-top: 250px;
+  }
+  .portfolio-section {
+    padding: 100px 0;
+  }
+  #map {
+    height: 400px;
+    margin-top: 250px;
+  }
+}
+.btn {
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0;
+}
+.btn-default {
+  border: 1px solid #42DCA3;
+  color: #42DCA3;
+  background-color: transparent;
+}
+.btn-default:hover,
+.btn-default:focus {
+  border: 1px solid #42DCA3;
+  outline: none;
+  color: #262626;
+  background-color: #42DCA3;
+}
+ul.banner-social-buttons {
+  margin-top: 0;
+}
+@media (max-width: 1199px) {
+  ul.banner-social-buttons {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  ul.banner-social-buttons li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.banner-social-buttons li:last-child {
+    margin-bottom: 0;
+  }
+}
+footer {
+  padding: 50px 0;
+}
+footer p {
+  margin: 0;
+}
+::-moz-selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+}
+::selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+}
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+body {
+  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+.cabin svg {
+  display: block;
+  margin: 80px auto 0;
+  width: 70%;
+}
+
+.mainCabin {
+  stroke-dasharray: 9293;
+  stroke-dashoffset: 9293;
+}
+
+.roof {
+  stroke-dasharray: 10486;
+  stroke-dashoffset: 10486;
+}
+
+.doors {
+  stroke-dasharray: 4740;
+  stroke-dashoffset: 4740;
+}
+
+.crossBeams {
+  stroke-dasharray: 789;
+  stroke-dashoffset: 789;
+}
+.circWindow {
+  stroke-dasharray: 345;
+  stroke-dashoffset: 345;
+}
+
+.stovepipe {
+  stroke-dasharray: 579;
+  stroke-dashoffset: 579;
+}
+
+.wl {
+  stroke-dasharray: 557;
+  stroke-dashoffset: 557;
+}
+
+.wr {
+  stroke-dasharray: 596;
+  stroke-dashoffset: 596;
+}
+
+.cabinPath {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-opacity: 0.4;
+  animation: offset 3s linear forwards;
+}
+.st3 {
+  opacity:0.58;
+  fill:url(#SVGID_1_);
+}
+.st4 {
+  opacity:0.58;
+  fill:url(#SVGID_2_);
+}
+.st5 {
+  opacity:0.58;
+  fill:url(#SVGID_3_);
+}
+
+.pulse {
+	-webkit-animation: pulse 3s linear 4.1s infinite;
+	-moz-animation: pulse 3s linear 4.1s infinite;
+	-ms-animation: pulse 3s linear 4.1s infinite;
+	animation: pulse 3s linear 4.1s infinite;
+}
+
+@keyframes "pulse" {
+ 0% {
+    -webkit-transform: scale(1);
+   	-moz-transform: scale(1);
+   	-o-transform: scale(1);
+   	-ms-transform: scale(1);
+   	transform: scale(1);
+ }
+ 50% {
+    -webkit-transform: scale(1.1);
+   	-moz-transform: scale(1.1);
+   	-o-transform: scale(1.1);
+   	-ms-transform: scale(1.1);
+   	transform: scale(1.1);
+ }
+  75% {
+    -webkit-transform: scale(1.05);
+   	-moz-transform: scale(1.05);
+   	-o-transform: scale(1.05);
+   	-ms-transform: scale(1.05);
+   	transform: scale(1.05);
+ }
+  85% {
+    -webkit-transform: scale(1.1);
+   	-moz-transform: scale(1.1);
+   	-o-transform: scale(1.1);
+   	-ms-transform: scale(1.1);
+   	transform: scale(1.1);
+ }
+ 100% {
+    -webkit-transform: scale(1);
+   	-moz-transform: scale(1);
+   	-o-transform: scale(1);
+   	-ms-transform: scale(1);
+   	transform: scale(1);
+ }
+}
+
+@-moz-keyframes pulse {
+ 0% {
+   -moz-transform: scale(1);
+   transform: scale(1);
+ }
+ 50% {
+   -moz-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+ 75% {
+   -moz-transform: scale(1.05);
+   transform: scale(1.05);
+ }
+ 85% {
+   -moz-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+ 100% {
+   -moz-transform: scale(1);
+   transform: scale(1);
+ }
+
+}
+
+@-webkit-keyframes "pulse" {
+ 0% {
+   -webkit-transform: scale(1);
+   transform: scale(1);
+ }
+ 50% {
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+ 75% {
+   -webkit-transform: scale(1.05);
+   transform: scale(1.05);
+ }
+ 85% {
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+ 100% {
+   -webkit-transform: scale(1);
+   transform: scale(1);
+ }
+
+}
+
+@-ms-keyframes "pulse" {
+ 0% {
+   -ms-transform: scale(1);
+   transform: scale(1);
+
+ }
+ 50% {
+   -ms-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+ 75% {
+   -ms-transform: scale(1.05);
+   transform: scale(1.05);
+ }
+ 85% {
+   -ms-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+ 100% {
+   -ms-transform: scale(1);
+   transform: scale(1);
+ }
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:0.58; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:0.58; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:0.58; } }
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1, pulse 3s linear 4.1s infinite;;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1, pulse 3s linear 4.1s infinite;;
+	animation:fadeIn ease-in 1, pulse 3s linear 4.1s infinite;;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.st3 {
+  transform-origin: 50% 50%;
+}
+
+.st4 {
+  transform-origin: 50% 50%;
+}
+
+.st5 {
+  transform-origin: 50% 50%;
+/*-webkit-animation-delay: 3s;
+-moz-animation-delay: 3s;
+animation-delay: 3s;*/
+}
+
+.codeIcon {
+  margin-bottom: 3px;
+}
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
