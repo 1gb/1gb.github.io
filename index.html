@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -128,9 +128,6 @@
 
 
                   </div>
-                    <!-- <h1 class="brand-heading">Grayscale</h1>
-                    <p class="intro-text">A free, responsive, one page Bootstrap theme.
-                        <br>Created by Start Bootstrap.</p> -->
                     <a href="#about" class="btn btn-circle page-scroll">
                         <i class="fa fa-angle-double-down animated"></i>
                     </a>
@@ -140,71 +137,125 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+    <section id="about" class="content-section text-center">
+      <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Eve</h2>
-                <h3>Extraordinarily talented, smart, driven and humble web designer and developer.</h3>
-                <p>After graduating from the University of Washington, I taught English in rural Japan for two years. Now I'm back in my home city of Seattle and teaching myself the magical language of the web. You can probably find me coding away in the corner of a local coffee shop. Or at home watching reruns of The X-files. Either way, rest assured that I'm living <em>my best life</em>.</p>
-                <p>I'm currently a Web Developer apprentice for the amazing <a href="http://www.iangilman.com/" target="_blank">Ian Gilman</a>.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="container content-section text-center">
-      <div class="portfolio-section">
-        <div class="col-lg-8 col-lg-offset-2">
-          <h1>Portfolio</h1>
-
-          <!-- <div class="col-lg-4 col-md-4 col-sm-4 gallery hold">
-            <a href="http://codepen.io/1gb/full/JGgaPX" target="_blank"><img src="assets/img/portfolio/folio01.png" class="img-responsive" target="_blank"></a>
+          <div class="col-lg-8 col-lg-offset-2">
+              <h2>About Eve</h2>
+              <h3>Extraordinarily talented, smart, driven and humble web designer and developer.</h3>
+              <p>After graduating from the University of Washington, I taught English in rural Japan for two years. Now I'm back in my home city of Seattle and teaching myself the magical language of the web. You can probably find me coding away in the corner of a local coffee shop. Or at home watching reruns of The X-files. Either way, rest assured that I'm living <em>my best life</em>.</p>
+              <p>I'm currently a Web Developer apprentice for the amazing <a href="http://www.iangilman.com/" target="_blank">Ian Gilman</a>.</p>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="http://codepen.io/1gb/full/dGdjVj" taret="_blank"><img src="assets/img/portfolio/folio02.png" class="img-responsive" target="_blank"></a>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="http://codepen.io/1gb/full/MKpxpN" target="_blank"><img src="assets/img/portfolio/folio03.png" class="img-responsive" target="_blank"></a>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="http://codepen.io/1gb/full/YwGyQM/" target="_blank"><img src="assets/img/portfolio/folio04.png" class="img-responsive" target="_blank"></a>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="#"><img src="assets/img/portfolio/folio05.png" class="img-responsive"></a>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="#"><img src="assets/img/portfolio/folio06.png" class="img-responsive"></a>
-          </div> -->
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Eve</h2>
-                <p>Feel like saying hello? Drop me a line at:</p>
-                <p><a href="mailto:eve@eveworthington.com">eve@eveworthington.com</a>
-                <p>Feel free to connect with me via social media!</p>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/yesthisiseve" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/1gb" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="http://codepen.io/1gb/pens/public/" class="btn btn-default btn-lg"><i class="fa fa-codepen fa-fw"></i> <span class="network-name">Codepen</span></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/256mb/" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="content-section text-center">
+      <div class="portfolio-section">
+        <div class="container">
+          <div class="row">
+
+              <div class="col-lg-12">
+                  <h1 class="page-header">Portfolio</h1>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <img class="img-responsive galthumb" data-toggle="modal" data-target=".bd-gal1-modal-lg" src="http://placehold.it/400x300" alt="">
+              </div>
+
+              <!-- Modal -->
+              <div class="modal fade bd-gal1-modal-lg" tabindex="-1" role="dialog" aria-labelledby="portfolio item" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="gridModalLabel">MemEater</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <img src="../1gb.github.io/img/portfolio/memEater750x400.jpg" class="img-responsive" alt="MemEater">
+                      </div>
+                      <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                          <p>MemEater was a collaborative project built in 48 hours for <a href="http://www.arthackday.net/events/erasure" target="_blank">Art Hack Day: Erasure</a>.
+                              Visitors were invited to share a memory via a laptop. Their memory would then displayed via a projector on a wall along with the memories entered by previous participants.
+                              If MemEater detected that a word was used in multiple memories, it would black out all instances of that word except for the most recent one.
+                              The concept, graphics and design were created by the incredible Illustrator/Architect <a href="http://www.myralara.com/" target="_blank">Myra Lara</a> and I contributed the code.
+                              It was on display at Velocity:V2 for the Art Hack Day: Erasure exhibition on September 17th, 2016.</p>
+                          <p>Check out MemEater <a href="http://www.eveworthington.com/memoryEater/" target="_blank">here</a>.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <img class="img-responsive galthumb" src="http://placehold.it/400x300" alt="MemEater">
+              </div>
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <img class="img-responsive galthumb" src="http://placehold.it/400x300" alt="Information Dissemination Specialist">
+              </div>
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a class="thumbnail" href="#">
+                      <img class="img-responsive galthumb" src="http://placehold.it/400x300" alt="Wage Per Second">
+                  </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a class="thumbnail" href="#">
+                      <img class="img-responsive galthumb" src="http://placehold.it/400x300" alt="Downuts">
+                  </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a class="thumbnail" href="#">
+                      <img class="img-responsive galthumb" src="http://placehold.it/400x300" alt="Weatherrific!">
+                  </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a class="thumbnail" href="#">
+                      <img class="img-responsive galthumb" src="http://placehold.it/400x300" alt="Pomodoro Timer">
+                  </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <a class="thumbnail" href="#">
+                      <img class="img-responsive galthumb" src="http://placehold.it/400x300" alt="JavaScript Calculator">
+                  </a>
+              </div>
+          </div>
+        <hr>
+        </div> <!-- /.container -->
+      </div> <!-- /.portfolio-section -->
     </section>
+
+<!-- Contact Section -->
+<section id="contact" class="content-section text-center">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>Contact Eve</h2>
+            <p>Feel like saying hello? Drop me a line at:</p>
+            <p><a href="mailto:eve@eveworthington.com">eve@eveworthington.com</a>
+            <p>Feel free to connect with me via social media!</p>
+            </p>
+            <ul class="list-inline banner-social-buttons">
+                <li>
+                    <a href="https://twitter.com/yesthisiseve" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/1gb" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                </li>
+                <li>
+                    <a href="http://codepen.io/1gb/pens/public/" class="btn btn-default btn-lg"><i class="fa fa-codepen fa-fw"></i> <span class="network-name">Codepen</span></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/256mb/" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </div>
+</section>
 
 
     <!-- Footer -->
