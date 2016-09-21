@@ -344,7 +344,7 @@ body {
   stroke: #fff;
   stroke-width: 2;
   stroke-opacity: 0.85;
-  animation: offset 3s linear forwards;
+  animation: offset 4s linear 500ms forwards;
 }
 .st3 {
   opacity:0.76;
