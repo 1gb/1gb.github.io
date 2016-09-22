@@ -15,7 +15,7 @@ function collapseNavbar() {
 
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
-
+//
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
@@ -28,9 +28,9 @@ $(function() {
 });
 
 // Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $(this).closest('.collapse').collapse('toggle');
-});
+// $('.navbar-collapse ul li a').click(function() {
+//     $(this).closest('.collapse').collapse('toggle');
+// });
 
 // function init() {
 //   var path = document.querySelector('.wr');
