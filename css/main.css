@@ -344,7 +344,7 @@ body {
   stroke: #fff;
   stroke-width: 2;
   stroke-opacity: 0.85;
-  animation: offset 4s linear 500ms forwards;
+  animation: offset 8s linear 1s forwards;
 }
 .st3 {
   opacity:0.76;
@@ -360,10 +360,10 @@ body {
 }
 
 .pulse {
-	-webkit-animation: pulse 3s linear 4.1s infinite;
-	-moz-animation: pulse 3s linear 4.1s infinite;
-	-ms-animation: pulse 3s linear 4.1s infinite;
-	animation: pulse 3s linear 4.1s infinite;
+	-webkit-animation: pulse 3s alternate 4.1s infinite;
+	-moz-animation: pulse 3s alternate 4.1s infinite;
+	-ms-animation: pulse 3s alternate 4.1s infinite;
+	animation: pulse 3s alternate 4.1s infinite;
 }
 
 @keyframes "pulse" {
@@ -482,17 +482,18 @@ body {
 
 .fade-in {
 	opacity:0;  /* make things invisible upon start */
-	-webkit-animation:fadeIn ease-in 1, pulse 3s linear 4.1s infinite;;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	-moz-animation:fadeIn ease-in 1, pulse 3s linear 4.1s infinite;;
-	animation:fadeIn ease-in 1, pulse 3s linear 4.1s infinite;;
+	-webkit-animation:fadeIn ease-in 1, pulse alternate 4.1s infinite;;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1, pulse alternate 4.1s infinite;;
+	animation:fadeIn ease-in 1, pulse alternate 4.1s infinite;;
 
 	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
 	-moz-animation-fill-mode:forwards;
 	animation-fill-mode:forwards;
 
-	-webkit-animation-duration:1s;
-	-moz-animation-duration:1s;
-	animation-duration:1s;
+  /* Sets the speed of the window flickering */
+	-webkit-animation-duration:2s;
+	-moz-animation-duration:2s;
+	animation-duration:2s;
 
   -webkit-animation-delay: 3s;
   -moz-animation-delay: 3s;
@@ -509,9 +510,6 @@ body {
 
 .st5 {
   transform-origin: 50% 50%;
-/*-webkit-animation-delay: 3s;
--moz-animation-delay: 3s;
-animation-delay: 3s;*/
 }
 
 .codeIcon {
