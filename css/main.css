@@ -299,7 +299,7 @@ body {
   margin: 80px auto 0;
   width: 70%;
 }
-
+/*
 .mainCabin {
   stroke-dasharray: 9293;
   stroke-dashoffset: 9293;
@@ -338,15 +338,15 @@ body {
   stroke-dasharray: 596;
   stroke-dashoffset: 596;
 }
-
+*/
 .cabinPath {
   fill: transparent;
   stroke: #fff;
   stroke-width: 2;
   stroke-opacity: 0.85;
-  animation: offset 8s linear 1s forwards;
+  /*animation: offset 8s linear 1s forwards;*/
 }
-.st3 {
+/*.st3 {
   opacity:0.76;
   fill:url(#SVGID_1_);
 }
@@ -481,16 +481,19 @@ body {
 @keyframes fadeIn { from { opacity:0; } to { opacity:0.58; } }
 
 .fade-in {
-	opacity:0;  /* make things invisible upon start */
-	-webkit-animation:fadeIn ease-in 1, pulse alternate 4.1s infinite;;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	opacity:0;
+  >>>>>>>>>>>> make things invisible upon start
+	-webkit-animation:fadeIn ease-in 1, pulse alternate 4.1s infinite;;
+  >>>>>>>>>>>>>> call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time
 	-moz-animation:fadeIn ease-in 1, pulse alternate 4.1s infinite;;
 	animation:fadeIn ease-in 1, pulse alternate 4.1s infinite;;
 
-	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-webkit-animation-fill-mode:forwards;
+  >>>>>>>>>>>>>  this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)
 	-moz-animation-fill-mode:forwards;
 	animation-fill-mode:forwards;
 
-  /* Sets the speed of the window flickering */
+  >>>>>>>>> Sets the speed of the window flickering
 	-webkit-animation-duration:2s;
 	-moz-animation-duration:2s;
 	animation-duration:2s;
@@ -520,7 +523,7 @@ body {
   100% {
     stroke-dashoffset: 0;
   }
-}
+}*/
 
 .galthumb {
   cursor: pointer;
