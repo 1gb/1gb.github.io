@@ -294,237 +294,81 @@ body {
   margin-right: 0;
 }
 
+/*--- SVG Styling ---*/
+
 .cabin svg {
   display: block;
   margin: 80px auto 0;
   width: 70%;
 }
-/*
-.mainCabin {
-  stroke-dasharray: 9293;
-  stroke-dashoffset: 9293;
-}
 
-.roof {
-  stroke-dasharray: 10486;
-  stroke-dashoffset: 10486;
-}
-
-.doors {
-  stroke-dasharray: 4740;
-  stroke-dashoffset: 4740;
-}
-
-.crossBeams {
-  stroke-dasharray: 789;
-  stroke-dashoffset: 789;
-}
-.circWindow {
-  stroke-dasharray: 345;
-  stroke-dashoffset: 345;
-}
-
-.stovepipe {
-  stroke-dasharray: 579;
-  stroke-dashoffset: 579;
-}
-
-.wl {
-  stroke-dasharray: 557;
-  stroke-dashoffset: 557;
-}
-
-.wr {
-  stroke-dasharray: 596;
-  stroke-dashoffset: 596;
-}
-*/
-.cabinPath {
+.onePath {
   fill: transparent;
   stroke: #fff;
   stroke-width: 2;
   stroke-opacity: 0.85;
-  /*animation: offset 8s linear 1s forwards;*/
+  stroke-dasharray: 28287;
+  stroke-dashoffset: 28287;
+  animation: dash 5s linear forwards;
 }
-/*.st3 {
-  opacity:0.76;
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st1 {
+  opacity: 0;
   fill:url(#SVGID_1_);
 }
-.st4 {
-  opacity:0.76;
+
+.st2 {
+  opacity: 0;
   fill:url(#SVGID_2_);
-}
-.st5 {
-  opacity:0.76;
-  fill:url(#SVGID_3_);
-}
-
-.pulse {
-	-webkit-animation: pulse 3s alternate 4.1s infinite;
-	-moz-animation: pulse 3s alternate 4.1s infinite;
-	-ms-animation: pulse 3s alternate 4.1s infinite;
-	animation: pulse 3s alternate 4.1s infinite;
-}
-
-@keyframes "pulse" {
- 0% {
-    -webkit-transform: scale(1);
-   	-moz-transform: scale(1);
-   	-o-transform: scale(1);
-   	-ms-transform: scale(1);
-   	transform: scale(1);
- }
- 50% {
-    -webkit-transform: scale(1.2);
-   	-moz-transform: scale(1.2);
-   	-o-transform: scale(1.2);
-   	-ms-transform: scale(1.2);
-   	transform: scale(1.2);
- }
-  75% {
-    -webkit-transform: scale(1.05);
-   	-moz-transform: scale(1.05);
-   	-o-transform: scale(1.05);
-   	-ms-transform: scale(1.05);
-   	transform: scale(1.05);
- }
-  85% {
-    -webkit-transform: scale(1.2);
-   	-moz-transform: scale(1.2);
-   	-o-transform: scale(1.2);
-   	-ms-transform: scale(1.2);
-   	transform: scale(1.2);
- }
- 100% {
-    -webkit-transform: scale(1);
-   	-moz-transform: scale(1);
-   	-o-transform: scale(1);
-   	-ms-transform: scale(1);
-   	transform: scale(1);
- }
-}
-
-@-moz-keyframes pulse {
- 0% {
-   -moz-transform: scale(1);
-   transform: scale(1);
- }
- 50% {
-   -moz-transform: scale(1.2);
-   transform: scale(1.2);
- }
- 75% {
-   -moz-transform: scale(1.05);
-   transform: scale(1.05);
- }
- 85% {
-   -moz-transform: scale(1.2);
-   transform: scale(1.2);
- }
- 100% {
-   -moz-transform: scale(1);
-   transform: scale(1);
- }
-
-}
-
-@-webkit-keyframes "pulse" {
- 0% {
-   -webkit-transform: scale(1);
-   transform: scale(1);
- }
- 50% {
-   -webkit-transform: scale(1.2);
-   transform: scale(1.2);
- }
- 75% {
-   -webkit-transform: scale(1.05);
-   transform: scale(1.05);
- }
- 85% {
-   -webkit-transform: scale(1.2);
-   transform: scale(1.2);
- }
- 100% {
-   -webkit-transform: scale(1);
-   transform: scale(1);
- }
-
-}
-
-@-ms-keyframes "pulse" {
- 0% {
-   -ms-transform: scale(1);
-   transform: scale(1);
-
- }
- 50% {
-   -ms-transform: scale(1.2);
-   transform: scale(1.2);
- }
- 75% {
-   -ms-transform: scale(1.05);
-   transform: scale(1.05);
- }
- 85% {
-   -ms-transform: scale(1.2);
-   transform: scale(1.2);
- }
- 100% {
-   -ms-transform: scale(1);
-   transform: scale(1);
- }
-}
-
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:0.58; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:0.58; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:0.58; } }
-
-.fade-in {
-	opacity:0;
-  >>>>>>>>>>>> make things invisible upon start
-	-webkit-animation:fadeIn ease-in 1, pulse alternate 4.1s infinite;;
-  >>>>>>>>>>>>>> call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time
-	-moz-animation:fadeIn ease-in 1, pulse alternate 4.1s infinite;;
-	animation:fadeIn ease-in 1, pulse alternate 4.1s infinite;;
-
-	-webkit-animation-fill-mode:forwards;
-  >>>>>>>>>>>>>  this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)
-	-moz-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;
-
-  >>>>>>>>> Sets the speed of the window flickering
-	-webkit-animation-duration:2s;
-	-moz-animation-duration:2s;
-	animation-duration:2s;
-
-  -webkit-animation-delay: 3s;
-  -moz-animation-delay: 3s;
-  animation-delay: 3s;
-}
-
-.st3 {
-  transform-origin: 50% 50%;
-}
-
-.st4 {
-  transform-origin: 50% 50%;
-}
-
-.st5 {
-  transform-origin: 50% 50%;
 }
 
 .codeIcon {
   margin-bottom: 3px;
 }
 
-@keyframes offset {
-  100% {
-    stroke-dashoffset: 0;
-  }
-}*/
+@keyframes flickerAnimation {
+  0%   { opacity:0.2; }
+  20%   { opacity:0.85; }
+  50%  { opacity:0.5; }
+  85%  { opacity:0.95; }
+  100% { opacity:0.2; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:0.2; }
+  20%   { opacity:0.85; }
+  50%  { opacity:0.5; }
+  85%  { opacity:0.95; }
+  100% { opacity:0.2; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:0.2; }
+  20%   { opacity:0.85; }
+  50%  { opacity:0.5; }
+  85%  { opacity:0.95; }
+  100% { opacity:0.2; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:0.2; }
+  20%   { opacity:0.85; }
+  50%  { opacity:0.5; }
+  85%  { opacity:0.95; }
+  100% { opacity:0.2; }
+}
+.animate-flicker {
+   -webkit-animation: flickerAnimation 6s 5s infinite;
+   -moz-animation: flickerAnimation 6s 5s infinite;
+   -o-animation: flickerAnimation 6s 5s infinite;
+    animation: flickerAnimation 6s 5s infinite;
+}
 
+
+/*---Modal Styling---*/
 .galthumb {
   cursor: pointer;
   margin-bottom: 15px;

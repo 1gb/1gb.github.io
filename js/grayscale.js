@@ -33,9 +33,9 @@ $(function() {
 // });
 
 // function init() {
-//   var path = document.querySelector('.wr');
+//   var path = document.querySelector('.onePath');
 //   var length = path.getTotalLength();
 //   console.log(length);
 // }
-
+//
 // init();
