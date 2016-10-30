@@ -27,6 +27,12 @@ $(function() {
     });
 });
 
+$('.galthumb').keydown(function(event){
+    if(event.keyCode === 13){
+       $(this).click();
+    }
+});
+
 // Closes the Responsive Menu on Menu Item Click
 // $('.navbar-collapse ul li a').click(function() {
 //     $(this).closest('.collapse').collapse('toggle');
