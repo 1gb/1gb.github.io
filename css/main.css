@@ -383,6 +383,12 @@ body {
   text-align: center;
 }
 
+.modal .imageStrip {
+  display: inline-block;
+  text-align: center;
+  width: 85%;
+}
+
 .modal p {
   color: #666;
   text-align: left;
