@@ -6,7 +6,7 @@ var items = [
     dataTarget: '.corn',
     imageLarge: 'img/portfolio/corn1500x800.png',
     imageSmall: 'img/portfolio/corn800x600.png',
-    description: 'Cornucopication is site that collects and categorizes events which embody the spirit of small town festivals celebrating locally produced goods or crops, especially those which are edible such as fruits or seafood.',
+    description: 'Cornucopication is a site that collects and categorizes events which embody the spirit of small town festivals celebrating locally produced goods or crops, especially those which are edible such as fruits or seafood.',
     tools: 'HTML, CSS, JavaScript, jQuery',
     link: 'http://www.cornucopication.com'
   },
