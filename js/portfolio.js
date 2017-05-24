@@ -1,13 +1,23 @@
 
 var items = [
   {
+    title: 'A Nonny Function - Poetry Generating Twitter Bot',
+    key: 'nonnyfunc',
+    dataTarget: '.nonnyfunc',
+    imageLarge: 'img/portfolio/nonnyfunc1215x648.jpg',
+    imageSmall: 'img/portfolio/nonnyfunc800x600.jpg',
+    description: 'A Twitter bot that tweets poetry using markov strings generated from the works of various poets (Walt Whitman, T.S. Eliot, Rainer Maria Rilke, William Anderson, John Keats, Gerard Manley Hopkins, Emily Dickinson).',
+    tools: 'JavaScript, Node, twit.js, RiTa',
+    link: 'https://twitter.com/anonnyfunction'
+  },
+  {
     title: 'Cornucopication',
     key: 'corn',
     dataTarget: '.corn',
     imageLarge: 'img/portfolio/corn1500x800.png',
     imageSmall: 'img/portfolio/corn800x600.png',
     description: 'Cornucopication is a site that collects and categorizes events which embody the spirit of small town festivals celebrating locally produced goods or crops, especially those which are edible such as fruits or seafood.',
-    tools: 'HTML, CSS, JavaScript, jQuery',
+    tools: 'HTML, CSS, JavaScript, jQuery, Google Maps API',
     link: 'http://www.cornucopication.com'
   },
   {
