@@ -111,6 +111,6 @@ var items = [
     link: 'http://codepen.io/1gb/full/MKpxpN/'
   },
 ];
-
-var template = $('.template').html();
- $("#modalArea").html(_.template(template,{items:items}));
+// 
+// var template = $('.template').html();
+//  $("#modalArea").html(_.template(template,{items:items}));

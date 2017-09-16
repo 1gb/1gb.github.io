@@ -1,0 +1,177 @@
+// VARIABLES
+@middle-purple: #2F3061;
+@dark-purple: #0F0326;
+@light-green: #B5D99C;
+@middle-green: #04471C;
+@dark-green: #0D2818;
+@orange-red: #E65F5C;
+@highlight: #FFFF82;
+@orange: #DBAF55;
+
+@font-face {
+    font-family: bloodcrow;
+    src: url(fonts/bloodcrow.ttf);
+}
+
+@font-face {
+    font-family: jacklantern;
+    src: url(fonts/JACKLB__.TTF);
+}
+
+body {
+  background-color: #1D1C12;
+  font-family: 'Arial', sans-serif;
+  color: @light-green;
+  text-align: center;
+}
+
+.hut-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #1D1C12;
+  width: 100%;
+  max-height: 850px;
+
+  .hut {
+    width: 100%;
+    #hut-img {
+      max-width: 100%;
+    }
+  }
+
+  .title {
+    width: 100%;
+    position: relative;
+    right: 5%;
+    animation: glow 8s linear infinite;
+
+    .eve {
+      letter-spacing: 3px;
+      font-size: 60px;
+      font-family: 'jacklantern', sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-family: 'Anton', sans-serif;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    width: 119px;
+    background: @light-green;
+    color: @dark-green;
+    padding: 2px;
+    margin-top: 45px;
+    margin-right: 5px;
+  }
+
+  .portfolio {
+    transform: rotate(3deg);
+  }
+
+  .portfolio:hover {
+    cursor: pointer;
+    transform: rotate(-3deg);
+  }
+
+  .about {
+    transform: rotate(-3deg);
+  }
+
+  .about:hover {
+    cursor: pointer;
+    transform: rotate(3deg);
+  }
+}
+
+.about-section {
+  // font-family: 'Walter Turncoat', sans-serif;
+  font-size: 20px;
+  display: inline-block;
+
+}
+
+.portfolio-container {
+  width: 88%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  div:nth-child(even) {
+      transform: rotate(2deg);
+  }
+  div:nth-child(odd) {
+      transform: rotate(-2deg);
+  }
+
+    .box {
+      height: 120px;
+      width: 220px;
+      margin: 20px;
+      border-radius: 5px;
+      background-color: @middle-green;
+      color: white;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 120px;
+    }
+}
+
+.social-buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    width: 35px;
+    padding: 17px;
+    display: inline-block;
+  }
+}
+
+
+// ANIMATION
+@keyframes glow {
+    0%   {opacity: 1;}
+    5%  {opacity: 0.6;}
+    10%  {opacity: 1;}
+    50%  {opacity: 1;}
+    65%  {opacity: 0.7;}
+    100% {opacity: 1;}
+}
+
+// MEDIA QUERIES
+
+@media (max-width: 600px) {
+  .hut-area {
+    display: inline;
+
+    .title {
+      right: auto;
+      .eve {
+        font-size: 40px;
+      }
+      .subtitle {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .social-buttons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      width: 25px;
+      padding: 17px;
+      display: inline-block;
+    }
+  }
+}

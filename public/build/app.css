@@ -1,0 +1,151 @@
+@font-face {
+  font-family: bloodcrow;
+  src: url(fonts/bloodcrow.ttf);
+}
+@font-face {
+  font-family: jacklantern;
+  src: url(fonts/JACKLB__.TTF);
+}
+body {
+  background-color: #1D1C12;
+  font-family: 'Arial', sans-serif;
+  color: #B5D99C;
+  text-align: center;
+}
+.hut-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #1D1C12;
+  width: 100%;
+  max-height: 850px;
+}
+.hut-area .hut {
+  width: 100%;
+}
+.hut-area .hut #hut-img {
+  max-width: 100%;
+}
+.hut-area .title {
+  width: 100%;
+  position: relative;
+  right: 5%;
+  animation: glow 8s linear infinite;
+}
+.hut-area .title .eve {
+  letter-spacing: 3px;
+  font-size: 60px;
+  font-family: 'jacklantern', sans-serif;
+  margin-bottom: 10px;
+}
+.hut-area .title .subtitle {
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.hut-area .btn {
+  display: inline-block;
+  width: 119px;
+  background: #B5D99C;
+  color: #0D2818;
+  padding: 2px;
+  margin-top: 45px;
+  margin-right: 5px;
+}
+.hut-area .portfolio {
+  transform: rotate(3deg);
+}
+.hut-area .portfolio:hover {
+  cursor: pointer;
+  transform: rotate(-3deg);
+}
+.hut-area .about {
+  transform: rotate(-3deg);
+}
+.hut-area .about:hover {
+  cursor: pointer;
+  transform: rotate(3deg);
+}
+.about-section {
+  font-size: 20px;
+  display: inline-block;
+}
+.portfolio-container {
+  width: 88%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio-container div:nth-child(even) {
+  transform: rotate(2deg);
+}
+.portfolio-container div:nth-child(odd) {
+  transform: rotate(-2deg);
+}
+.portfolio-container .box {
+  height: 120px;
+  width: 220px;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: #04471C;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 120px;
+}
+.social-buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.social-buttons li {
+  width: 35px;
+  padding: 17px;
+  display: inline-block;
+}
+@keyframes glow {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0.6;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 600px) {
+  .hut-area {
+    display: inline;
+  }
+  .hut-area .title {
+    right: auto;
+  }
+  .hut-area .title .eve {
+    font-size: 40px;
+  }
+  .hut-area .title .subtitle {
+    font-size: 16px;
+  }
+  .social-buttons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .social-buttons li {
+    width: 25px;
+    padding: 17px;
+    display: inline-block;
+  }
+}
