@@ -2,11 +2,13 @@
 @middle-purple: #2F3061;
 @dark-purple: #0F0326;
 @light-green: #B5D99C;
+@light-peach: #d9ae9c;
 @middle-green: #04471C;
 @dark-green: #0D2818;
 @orange-red: #E65F5C;
 @highlight: #FFFF82;
 @orange: #DBAF55;
+@bg-color: #1D1C12;
 
 @font-face {
     font-family: bloodcrow;
@@ -19,17 +21,23 @@
 }
 
 body {
-  background-color: #1D1C12;
-  font-family: 'Arial', sans-serif;
+  background-color: @bg-color;
+  font-family: 'Courier New', Courier, monospace;
   color: @light-green;
   text-align: center;
+}
+
+// TOP AREA
+#image4999 {
+  transform-origin: 770px 470px;
+  animation: sway 8s ease-in-out infinite;
 }
 
 .hut-area {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #1D1C12;
+  // background-color: #1D1C12;
   width: 100%;
   max-height: 850px;
 
@@ -37,6 +45,7 @@ body {
     width: 100%;
     #hut-img {
       max-width: 100%;
+      height: 100%;
     }
   }
 
@@ -48,46 +57,45 @@ body {
 
     .eve {
       letter-spacing: 3px;
-      font-size: 60px;
-      font-family: 'jacklantern', sans-serif;
+      font-size: 50px;
+      font-family: 'bloodcrow', sans-serif;
       margin-bottom: 10px;
+      text-shadow: 0 0 0.2em @highlight;
     }
 
     .subtitle {
-      font-family: 'Anton', sans-serif;
       font-size: 20px;
       letter-spacing: 1px;
     }
   }
 
+  .btn:hover {
+    cursor: pointer;
+  }
+
   .btn {
     display: inline-block;
-    width: 119px;
-    background: @light-green;
-    color: @dark-green;
-    padding: 2px;
+    width: 121px;
+    color: @bg-color;
     margin-top: 45px;
     margin-right: 5px;
-  }
+    padding: 2px;
 
-  .portfolio {
-    transform: rotate(3deg);
-  }
+    .portfolio {
+      padding: 2px;
+      background: @light-green;
+      transform: rotate(4deg);
+    }
 
-  .portfolio:hover {
-    cursor: pointer;
-    transform: rotate(-3deg);
-  }
-
-  .about {
-    transform: rotate(-3deg);
-  }
-
-  .about:hover {
-    cursor: pointer;
-    transform: rotate(3deg);
+    .about {
+      padding: 2px;
+      background: @light-green;
+      transform: rotate(-4deg);
+    }
   }
 }
+
+// DUNNO MAYBE DELETE
 
 .about-section {
   // font-family: 'Walter Turncoat', sans-serif;
@@ -103,12 +111,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  div:nth-child(even) {
-      transform: rotate(2deg);
-  }
-  div:nth-child(odd) {
-      transform: rotate(-2deg);
-  }
 
     .box {
       height: 120px;
@@ -123,18 +125,28 @@ body {
     }
 }
 
+// SOCIAL LINKS
+
+.btnL img {
+  transform: rotate(4deg);
+}
+
+.btnR img {
+  transform: rotate(-4deg);
+}
+
 .social-buttons {
+  font-size: 0;
   list-style-type: none;
   margin: 0;
   padding: 0;
 
   li {
     width: 35px;
-    padding: 17px;
+    margin: 17px;
     display: inline-block;
   }
 }
-
 
 // ANIMATION
 @keyframes glow {
@@ -144,6 +156,12 @@ body {
     50%  {opacity: 1;}
     65%  {opacity: 0.7;}
     100% {opacity: 1;}
+}
+
+@keyframes sway {
+    0%   {transform: rotate(9deg)}
+    50%  {transform: rotate(-9deg)}
+    100% {transform: rotate(9deg)}
 }
 
 // MEDIA QUERIES

@@ -1,5 +1,27 @@
+// image4999 is little hut
+// image4762 is bug hut
+
+
+
+$( document ).ready(function() {
+    $('.btnL').hover(function() {
+      $(this).find('.inside-link').css('transform', 'rotate(-4deg)');
+    }, function() {
+      $(this).find('.inside-link').css('transform', 'rotate(4deg)');
+    });
+
+    $('.btnR').hover(function() {
+      $(this).find('.inside-link').css('transform', 'rotate(4deg)');
+    }, function() {
+      $(this).find('.inside-link').css('transform', 'rotate(-4deg)');
+    });
+
+
+    
+});
+
 // preserveAspectRatio="xMidYMin slice"
-// 
+//
 // (function() {
 //
 //   // ----------

@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio website for Eve Worthington: Web Developer and Bog Witch">
-    <meta name="author" content="Eve Worthington">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#ffffff">
-    <link href="app.css" rel="stylesheet">
-
-    <title>Eve Worthington - Bog Witch / Web Dev</title>
-
-</head>
-
-<body>
-  <div class="hut-area">
-    <div class="hut">
-      <!-- <img id="hut-img" src="img/inkscapehut.svg"> -->
-      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
@@ -36,7 +13,7 @@
    width="1000"
    height="1116"
    viewBox="0 0 1000 1116"
-   id="hut-img"
+   id="svg4136"
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="inkscapehut.svg">
@@ -16753,73 +16730,3 @@ WjRltB3o9w11P2BtZLAT3bFl+bN52/3j187Kf5AVLIXofKZk5RzfjFL/toRrszPy7IED2QvrYuKM
        width="116" />
   </g>
 </svg>
-
-    </div>
-    <div class="title">
-      <div class="eve">Eve Worthington</div>
-      <div class="subtitle">
-        <div class="med witch">300-year-old Bog Witch</div>
-        <div class="and">&</div>
-        <div class="med frontend">Web Developer</div>
-      </div>
-      <div class="btnL btn"><div class="inside-link portfolio">Recent Works</div></div>
-      <div class="btnR btn"><div class="inside-link about">About Eve</div></div>
-    </div>
-  </div>
-
-  <!-- About Section -->
-  <section id="about" class="about-section">
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact"><i></i>
-    <div class="container">
-      <div class="row">
-          <div>
-              <ul class="social-buttons">
-                  <li class="btnL">
-                      <a href="mailto:eve@eveworthington.com"><img src="img/mail.svg" class="inside-link" alt="E-mail eve@eveworthington.com"></a>
-                  </li>
-                  <li class="btnR">
-                      <a href="https://twitter.com/yesthisiseve" target="_blank"><img src="img/twitter.svg" class="inside-link" alt="Twitter"></a>
-                  </li>
-                  <li class="btnL">
-                      <a href="https://github.com/1gb" target="_blank"><img src="img/github.svg" class="inside-link" alt="GitHub"></a>
-                  </li>
-                  <li class="btnR">
-                      <a href="http://codepen.io/1gb/pens/public/" target="_blank"><img src="img/codepen.svg" class="inside-link" alt="CodePen"></a>
-                  </li>
-                  <li class="btnL">
-                      <a href="https://www.instagram.com/256mb/" target="_blank"><img src="img/instagram.svg" class="inside-link" alt="Instagram"></a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-    </div>
-  </section>
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy;2017 Eve Worthington</p>
-        </div>
-    </footer>
-
-    <script src="lib.js"></script>
-    <script src="app.min.js"></script>
-
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-84591463-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-</body>
-
-</html>

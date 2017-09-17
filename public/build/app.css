@@ -8,15 +8,18 @@
 }
 body {
   background-color: #1D1C12;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   color: #B5D99C;
   text-align: center;
+}
+#image4999 {
+  transform-origin: 770px 470px;
+  animation: sway 8s ease-in-out infinite;
 }
 .hut-area {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #1D1C12;
   width: 100%;
   max-height: 850px;
 }
@@ -25,6 +28,7 @@ body {
 }
 .hut-area .hut #hut-img {
   max-width: 100%;
+  height: 100%;
 }
 .hut-area .title {
   width: 100%;
@@ -34,37 +38,35 @@ body {
 }
 .hut-area .title .eve {
   letter-spacing: 3px;
-  font-size: 60px;
-  font-family: 'jacklantern', sans-serif;
+  font-size: 50px;
+  font-family: 'bloodcrow', sans-serif;
   margin-bottom: 10px;
+  text-shadow: 0 0 0.2em #FFFF82;
 }
 .hut-area .title .subtitle {
-  font-family: 'Anton', sans-serif;
   font-size: 20px;
   letter-spacing: 1px;
 }
+.hut-area .btn:hover {
+  cursor: pointer;
+}
 .hut-area .btn {
   display: inline-block;
-  width: 119px;
-  background: #B5D99C;
-  color: #0D2818;
-  padding: 2px;
+  width: 121px;
+  color: #1D1C12;
   margin-top: 45px;
   margin-right: 5px;
+  padding: 2px;
 }
-.hut-area .portfolio {
-  transform: rotate(3deg);
+.hut-area .btn .portfolio {
+  padding: 2px;
+  background: #B5D99C;
+  transform: rotate(4deg);
 }
-.hut-area .portfolio:hover {
-  cursor: pointer;
-  transform: rotate(-3deg);
-}
-.hut-area .about {
-  transform: rotate(-3deg);
-}
-.hut-area .about:hover {
-  cursor: pointer;
-  transform: rotate(3deg);
+.hut-area .btn .about {
+  padding: 2px;
+  background: #B5D99C;
+  transform: rotate(-4deg);
 }
 .about-section {
   font-size: 20px;
@@ -78,12 +80,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-.portfolio-container div:nth-child(even) {
-  transform: rotate(2deg);
-}
-.portfolio-container div:nth-child(odd) {
-  transform: rotate(-2deg);
-}
 .portfolio-container .box {
   height: 120px;
   width: 220px;
@@ -95,14 +91,21 @@ body {
   vertical-align: middle;
   line-height: 120px;
 }
+.btnL img {
+  transform: rotate(4deg);
+}
+.btnR img {
+  transform: rotate(-4deg);
+}
 .social-buttons {
+  font-size: 0;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 .social-buttons li {
   width: 35px;
-  padding: 17px;
+  margin: 17px;
   display: inline-block;
 }
 @keyframes glow {
@@ -123,6 +126,17 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes sway {
+  0% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(-9deg);
+  }
+  100% {
+    transform: rotate(9deg);
   }
 }
 @media (max-width: 600px) {
