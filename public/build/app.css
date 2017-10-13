@@ -99,55 +99,6 @@ body a {
   margin: 17px;
   display: inline-block;
 }
-@media (min-width: 880px) {
-  .hut-area .title {
-    width: auto;
-  }
-}
-@media (max-width: 600px) {
-  .hut-area {
-    display: inline;
-  }
-  .hut-area .hut {
-    width: 100%;
-  }
-  .hut-area .title {
-    right: auto;
-  }
-  .hut-area .title .eve {
-    font-size: 40px;
-  }
-  .hut-area .title .subtitle {
-    font-size: 16px;
-  }
-  .side-menu {
-    width: auto;
-    margin: 0 auto;
-    float: none;
-  }
-  .side-menu .sidelinks {
-    padding: 0;
-    border: 1px solid #B5D99C;
-  }
-  .side-menu .sidelinks .portfolio,
-  .side-menu .sidelinks .about {
-    padding: 6px 0;
-    margin: 0;
-  }
-  .about-section {
-    width: 100%;
-  }
-  .social-buttons {
-    list-style-type: none;
-    margin: 10px 0 0 0;
-    padding: 0;
-  }
-  .social-buttons li {
-    width: 25px;
-    margin: 10px;
-    display: inline-block;
-  }
-}
 
 @keyframes flightPath1 {
   0% {
@@ -739,6 +690,55 @@ body a {
   }
   100% {
     transform: rotate(9deg);
+  }
+}
+@media (min-width: 880px) {
+  .hut-area .title {
+    width: auto;
+  }
+}
+@media (max-width: 600px) {
+  .hut-area {
+    display: inline;
+  }
+  .hut-area .hut {
+    width: 100%;
+  }
+  .hut-area .title {
+    right: auto;
+  }
+  .hut-area .title .eve {
+    font-size: 40px;
+  }
+  .hut-area .title .subtitle {
+    font-size: 16px;
+  }
+  .side-menu {
+    width: auto;
+    margin: 0 auto;
+    float: none;
+  }
+  .side-menu .sidelinks {
+    padding: 0;
+    border: 1px solid #B5D99C;
+  }
+  .side-menu .sidelinks .portfolio,
+  .side-menu .sidelinks .about {
+    padding: 6px 0;
+    margin: 0;
+  }
+  .about-section {
+    width: 100%;
+  }
+  .social-buttons {
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+  }
+  .social-buttons li {
+    width: 25px;
+    margin: 10px;
+    display: inline-block;
   }
 }
 
