@@ -1,0 +1,204 @@
+// VARIABLES
+@middle-purple: #2F3061;
+@dark-purple: #0F0326;
+@dpurple: #422f36;
+@light-green: #B5D99C;
+@light-peach: #d9ae9c;
+@middle-green: #04471C;
+@dark-green: #0D2818;
+@orange-red: #E65F5C;
+@highlight: #FFFF82;
+@orange: #DBAF55;
+@orangebrown: #604804;
+@bg-color: #1D1C12;
+
+// TOP AREA
+#littlehut {
+  transform-origin: 597px 405px;
+  animation: sway 8s ease-in-out infinite;
+}
+
+#littlesat {
+  transform-origin: 301px 304px;
+  animation: seek 20s ease-in-out infinite;
+}
+
+.orb-layer {
+  width: 100%;
+  height: 50%;
+  z-index: 2;
+  width: 100%;
+  position: absolute;
+  max-height: 850px;
+  top: 0;
+  left: 0;
+
+  .glowyorb {
+    border-radius: 100%;
+    background-color: @light-green;
+    box-shadow: 0 0 30px 10px @light-green;
+    height: 1px;
+    width: 1px;
+    opacity: 0.6;
+    position: relative;
+  }
+
+  #gorb1 {
+    top: 10%;
+    left: 10%;
+    animation: glow 4s linear infinite, flightPath1 4s linear infinite;
+    animation-delay: -0.25s;
+  }
+  #gorb2 {
+    top: 40%;
+    left: 15%;
+    animation: glow 4s linear infinite, flightPath2 4s linear infinite;
+    animation-delay: -0.5s;
+  }
+  #gorb3 {
+    top: 50%;
+    left: 33%;
+    animation: glow 4s linear infinite, flightPath3 4s linear infinite;
+    animation-delay: -1s;
+  }
+  #gorb4 {
+    top: 22%;
+    left: 40%;
+    animation: glow 4s linear infinite, flightPath4 4s linear infinite;
+    animation-delay: -1.25s;
+  }
+  #gorb5 {
+    top: 39%;
+    left: 44%;
+    animation: flightPath7 10s linear infinite;
+    animation-delay: -1.5s;
+
+  }
+  #gorb6 {
+    top: 27%;
+    left: 58%;
+    animation: glow 4s linear infinite, flightPath6 4s linear infinite;
+    animation-delay: -1.75s;
+  }
+  #gorb7 {
+    top: 35%;
+    left: 65%;
+    animation: glow 4s linear infinite, flightPath7 4s linear infinite;
+    animation-delay: -2s;
+  }
+  #gorb8 {
+    top: 13%;
+    left: 72%;
+    animation: glow 4s linear infinite, flightPath8 4s linear infinite;
+    animation-delay: -2.25s;
+  }
+  #gorb9 {
+    top: 30%;
+    left: 85%;
+    animation: glow 4s linear infinite, flightPath9 4s linear infinite;
+    animation-delay: -2.5s;
+  }
+  #gorb10 {
+    top: 7%;
+    left: 90%;
+    animation: glow 4s linear infinite, flightPath10 4s linear infinite;
+    animation-delay: -2.75s;
+  }
+}
+
+.hut-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-height: 850px;
+
+  .hut {
+    x: -34px;
+    y: -15px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .title {
+    width: 100%;
+    position: relative;
+    right: 5%;
+    z-index: 100;
+
+    .eve {
+      letter-spacing: 3px;
+      font-size: 50px;
+      font-family: 'bloodcrow', sans-serif;
+      margin-bottom: 10px;
+      text-shadow: 0 0 0.2em @middle-green;
+      // animation: glow 8s linear infinite;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .btn:hover {
+    cursor: pointer;
+  }
+
+  .btn {
+    display: inline-block;
+    width: 121px;
+    color: @bg-color;
+    padding: 2px;
+    margin-top: 45px;
+    margin-right: 5px;
+
+    .portfolio {
+      padding: 2px;
+      background: @light-green;
+      transform: rotate(4deg);
+    }
+
+    .about {
+      padding: 2px;
+      background: @light-green;
+      transform: rotate(-4deg);
+    }
+  }
+}
+
+// ANIMATION
+
+@keyframes glow {
+    0%   {opacity: 1;}
+    5%  {opacity: 0.6;}
+    10%  {opacity: 1;}
+    50%  {opacity: 0.4;}
+    65%  {opacity: 1;}
+    100% {opacity: 0.6;}
+}
+
+@keyframes seek {
+    0%   {transform: rotate(0deg)}
+    12%   {transform: rotate(0deg)}
+    15%   {transform: rotate(7deg)}
+    27%   {transform: rotate(7deg)}
+    30%   {transform: rotate(14deg)}
+    42%   {transform: rotate(14deg)}
+    45%  {transform: rotate(7deg)}
+    57%  {transform: rotate(7deg)}
+    60%  {transform: rotate(0deg)}
+    82%  {transform: rotate(0deg)}
+    85%  {transform: rotate(-7deg)}
+    97%  {transform: rotate(-7deg)}
+    100% {transform: rotate(0deg)}
+}
+
+@keyframes sway {
+    0%   {transform: rotate(9deg)}
+    50%  {transform: rotate(-9deg)}
+    100% {transform: rotate(9deg)}
+}

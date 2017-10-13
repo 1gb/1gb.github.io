@@ -35,19 +35,25 @@ module.exports = function(grunt) {
     copy: {
         files: {
             cwd: '.',  // set working folder / root to copy
-            src: 'index.html',      // copy all files and subfolders **with ending .html**
+            src: '*.html',      // copy all files with ending .html**
             dest: 'public/build/',    // destination folder
             expand: true
           },
           img: {
-            cwd: 'img/',  // set working folder / root to copy
-            src: '**/*.*',      // copy all files and subfolders **with ending .html**
+            cwd: 'img/',
+            src: '**/*.*',
             dest: 'public/build/img/',    // destination folder
             expand: true
           },
+          fav: {
+            cwd: 'favicon/',
+            src: '**/*.*',
+            dest: 'public/build/',    // destination folder
+            expand: true
+          },
           font: {
-            cwd: 'style/fonts',  // set working folder / root to copy
-            src: '**/*.*',      // copy all files and subfolders **with ending .html**
+            cwd: 'style/fonts',
+            src: '**/*.*',      // copy everything
             dest: 'public/build/fonts/',    // destination folder
             expand: true
           }
@@ -55,7 +61,7 @@ module.exports = function(grunt) {
     less: {
       app: {
         src: [
-          'style/app.less'
+          'style/*.less'
         ],
         dest: 'public/build/app.css'
       }
@@ -75,7 +81,7 @@ module.exports = function(grunt) {
     watch: {
       files: [
         'Gruntfile.js',
-        'index.html',
+        '*.html',
         'js/**',
         'style/**',
         'lib/**'
