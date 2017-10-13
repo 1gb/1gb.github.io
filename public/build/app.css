@@ -1,0 +1,758 @@
+body {
+  background: #1D1C12;
+  background: -webkit-linear-gradient(#DBAF55, #604804, #1D1C12);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#DBAF55, #604804, #1D1C12);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#DBAF55, #604804, #1D1C12);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#DBAF55, #604804, #1D1C12);
+  /* Standard syntax */
+  backgroud-size: cover cover;
+  background-repeat: no-repeat;
+  font-family: 'Courier New', Courier, monospace;
+  color: #B5D99C;
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  background-attachment: fixed;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+@font-face {
+  font-family: bloodcrow;
+  src: url(fonts/bloodcrow.ttf);
+}
+.side-menu {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 25px;
+  float: left;
+}
+.side-menu .about,
+.side-menu .portfolio {
+  margin-top: 5px;
+}
+.side-menu .sidelinks {
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-right: 1px solid #B5D99C;
+}
+.side-menu .active {
+  color: #1D1C12;
+  background-color: #B5D99C;
+}
+.side-menu .main-icon {
+  height: 75px;
+  line-height: 75px;
+  padding: 2px;
+  letter-spacing: 8px;
+  font-size: 40px;
+  font-family: 'bloodcrow', sans-serif;
+  color: #B5D99C;
+  cursor: pointer;
+}
+.side-menu .main-icon svg {
+  width: 75px;
+  height: 75px;
+}
+.side-menu .main-icon:hover {
+  text-shadow: 0 0 0.2em #FFFF82;
+}
+.about-section,
+.portfolio-section {
+  line-height: 1.5;
+  margin-top: 50px;
+  font-size: 16px;
+  display: inline-block;
+  width: 70%;
+  min-height: 350px;
+}
+.about-section .email,
+.portfolio-section .email {
+  color: #DBAF55;
+}
+.about-section .email:hover,
+.portfolio-section .email:hover {
+  background-color: #DBAF55;
+  color: #1D1C12;
+}
+.btnL img {
+  transform: rotate(4deg);
+}
+.btnR img {
+  transform: rotate(-4deg);
+}
+.social-buttons {
+  font-size: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.social-buttons li {
+  width: 35px;
+  margin: 17px;
+  display: inline-block;
+}
+@media (min-width: 880px) {
+  .hut-area .title {
+    width: auto;
+  }
+}
+@media (max-width: 600px) {
+  .hut-area {
+    display: inline;
+  }
+  .hut-area .hut {
+    width: 100%;
+  }
+  .hut-area .title {
+    right: auto;
+  }
+  .hut-area .title .eve {
+    font-size: 40px;
+  }
+  .hut-area .title .subtitle {
+    font-size: 16px;
+  }
+  .side-menu {
+    width: auto;
+    margin: 0 auto;
+    float: none;
+  }
+  .side-menu .sidelinks {
+    padding: 0;
+    border: 1px solid #B5D99C;
+  }
+  .side-menu .sidelinks .portfolio,
+  .side-menu .sidelinks .about {
+    padding: 6px 0;
+    margin: 0;
+  }
+  .about-section {
+    width: 100%;
+  }
+  .social-buttons {
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+  }
+  .social-buttons li {
+    width: 25px;
+    margin: 10px;
+    display: inline-block;
+  }
+}
+
+@keyframes flightPath1 {
+  0% {
+    top: 10%;
+    left: 10%;
+  }
+  12% {
+    top: 9%;
+    left: 11%;
+  }
+  25% {
+    top: 10%;
+    left: 12%;
+  }
+  37% {
+    top: 11%;
+    left: 13%;
+  }
+  50% {
+    top: 10%;
+    left: 14%;
+  }
+  62% {
+    top: 9%;
+    left: 13%;
+  }
+  75% {
+    top: 10%;
+    left: 12%;
+  }
+  87% {
+    top: 11%;
+    left: 11%;
+  }
+  100% {
+    top: 10%;
+    left: 10%;
+  }
+}
+@keyframes flightPath2 {
+  0% {
+    top: 40%;
+    left: 15%;
+  }
+  12% {
+    top: 39%;
+    left: 16%;
+  }
+  25% {
+    top: 40%;
+    left: 17%;
+  }
+  37% {
+    top: 41%;
+    left: 18%;
+  }
+  50% {
+    top: 40%;
+    left: 19%;
+  }
+  62% {
+    top: 39%;
+    left: 18%;
+  }
+  75% {
+    top: 40%;
+    left: 17%;
+  }
+  87% {
+    top: 41%;
+    left: 16%;
+  }
+  100% {
+    top: 40%;
+    left: 15%;
+  }
+}
+@keyframes flightPath3 {
+  0% {
+    top: 50%;
+    left: 33%;
+  }
+  12% {
+    top: 49%;
+    left: 34%;
+  }
+  25% {
+    top: 50%;
+    left: 35%;
+  }
+  37% {
+    top: 51%;
+    left: 36%;
+  }
+  50% {
+    top: 50%;
+    left: 37%;
+  }
+  62% {
+    top: 49%;
+    left: 36%;
+  }
+  75% {
+    top: 50%;
+    left: 35%;
+  }
+  87% {
+    top: 51%;
+    left: 34%;
+  }
+  100% {
+    top: 50%;
+    left: 33%;
+  }
+}
+@keyframes flightPath4 {
+  0% {
+    top: 22%;
+    left: 40%;
+  }
+  12% {
+    top: 21%;
+    left: 41%;
+  }
+  25% {
+    top: 22%;
+    left: 42%;
+  }
+  37% {
+    top: 23%;
+    left: 43%;
+  }
+  50% {
+    top: 22%;
+    left: 44%;
+  }
+  62% {
+    top: 21%;
+    left: 43%;
+  }
+  75% {
+    top: 22%;
+    left: 42%;
+  }
+  87% {
+    top: 23%;
+    left: 41%;
+  }
+  100% {
+    top: 22%;
+    left: 40%;
+  }
+}
+@keyframes flightPath5 {
+  0% {
+    top: 39%;
+    left: 44%;
+  }
+  12% {
+    top: 38%;
+    left: 45%;
+  }
+  25% {
+    top: 39%;
+    left: 46%;
+  }
+  37% {
+    top: 40%;
+    left: 47%;
+  }
+  50% {
+    top: 39%;
+    left: 48%;
+  }
+  62% {
+    top: 38%;
+    left: 47%;
+  }
+  75% {
+    top: 39%;
+    left: 46%;
+  }
+  87% {
+    top: 40%;
+    left: 45%;
+  }
+  100% {
+    top: 39%;
+    left: 44%;
+  }
+}
+@keyframes flightPath6 {
+  0% {
+    top: 27%;
+    left: 58%;
+  }
+  12% {
+    top: 26%;
+    left: 59%;
+  }
+  25% {
+    top: 27%;
+    left: 60%;
+  }
+  37% {
+    top: 28%;
+    left: 61%;
+  }
+  50% {
+    top: 27%;
+    left: 62%;
+  }
+  62% {
+    top: 26%;
+    left: 61%;
+  }
+  75% {
+    top: 27%;
+    left: 60%;
+  }
+  87% {
+    top: 28%;
+    left: 59%;
+  }
+  100% {
+    top: 27%;
+    left: 58%;
+  }
+}
+@keyframes flightPath7 {
+  0% {
+    top: 35%;
+    left: 65%;
+  }
+  12% {
+    top: 34%;
+    left: 66%;
+  }
+  25% {
+    top: 35%;
+    left: 67%;
+  }
+  37% {
+    top: 36%;
+    left: 68%;
+  }
+  50% {
+    top: 35%;
+    left: 69%;
+  }
+  62% {
+    top: 34%;
+    left: 68%;
+  }
+  75% {
+    top: 35%;
+    left: 67%;
+  }
+  87% {
+    top: 36%;
+    left: 66%;
+  }
+  100% {
+    top: 35%;
+    left: 65%;
+  }
+}
+@keyframes flightPath8 {
+  0% {
+    top: 13%;
+    left: 72%;
+  }
+  12% {
+    top: 12%;
+    left: 73%;
+  }
+  25% {
+    top: 13%;
+    left: 74%;
+  }
+  37% {
+    top: 14%;
+    left: 75%;
+  }
+  50% {
+    top: 13%;
+    left: 76%;
+  }
+  62% {
+    top: 12%;
+    left: 75%;
+  }
+  75% {
+    top: 13%;
+    left: 74%;
+  }
+  87% {
+    top: 14%;
+    left: 73%;
+  }
+  100% {
+    top: 13%;
+    left: 72%;
+  }
+}
+@keyframes flightPath9 {
+  0% {
+    top: 30%;
+    left: 85%;
+  }
+  12% {
+    top: 29%;
+    left: 86%;
+  }
+  25% {
+    top: 30%;
+    left: 87%;
+  }
+  37% {
+    top: 31%;
+    left: 88%;
+  }
+  50% {
+    top: 30%;
+    left: 89%;
+  }
+  62% {
+    top: 29%;
+    left: 88%;
+  }
+  75% {
+    top: 30%;
+    left: 87%;
+  }
+  87% {
+    top: 31%;
+    left: 86%;
+  }
+  100% {
+    top: 30%;
+    left: 85%;
+  }
+}
+@keyframes flightPath10 {
+  0% {
+    top: 7%;
+    left: 90%;
+  }
+  12% {
+    top: 6%;
+    left: 91%;
+  }
+  25% {
+    top: 7%;
+    left: 92%;
+  }
+  37% {
+    top: 8%;
+    left: 93%;
+  }
+  50% {
+    top: 7%;
+    left: 94%;
+  }
+  62% {
+    top: 6%;
+    left: 93%;
+  }
+  75% {
+    top: 7%;
+    left: 92%;
+  }
+  87% {
+    top: 8%;
+    left: 91%;
+  }
+  100% {
+    top: 7%;
+    left: 90%;
+  }
+}
+
+#littlehut {
+  transform-origin: 597px 405px;
+  animation: sway 8s ease-in-out infinite;
+}
+#littlesat {
+  transform-origin: 301px 304px;
+  animation: seek 20s ease-in-out infinite;
+}
+.orb-layer {
+  height: 50%;
+  z-index: 2;
+  width: 100%;
+  position: absolute;
+  max-height: 850px;
+  top: 0;
+  left: 0;
+}
+.orb-layer .glowyorb {
+  border-radius: 100%;
+  background-color: #B5D99C;
+  box-shadow: 0 0 30px 10px #B5D99C;
+  height: 1px;
+  width: 1px;
+  opacity: 0.6;
+  position: relative;
+}
+.orb-layer #gorb1 {
+  top: 10%;
+  left: 10%;
+  animation: glow 4s linear infinite, flightPath1 4s linear infinite;
+  animation-delay: -0.25s;
+}
+.orb-layer #gorb2 {
+  top: 40%;
+  left: 15%;
+  animation: glow 4s linear infinite, flightPath2 4s linear infinite;
+  animation-delay: -0.5s;
+}
+.orb-layer #gorb3 {
+  top: 50%;
+  left: 33%;
+  animation: glow 4s linear infinite, flightPath3 4s linear infinite;
+  animation-delay: -1s;
+}
+.orb-layer #gorb4 {
+  top: 22%;
+  left: 40%;
+  animation: glow 4s linear infinite, flightPath4 4s linear infinite;
+  animation-delay: -1.25s;
+}
+.orb-layer #gorb5 {
+  top: 39%;
+  left: 44%;
+  animation: flightPath7 10s linear infinite;
+  animation-delay: -1.5s;
+}
+.orb-layer #gorb6 {
+  top: 27%;
+  left: 58%;
+  animation: glow 4s linear infinite, flightPath6 4s linear infinite;
+  animation-delay: -1.75s;
+}
+.orb-layer #gorb7 {
+  top: 35%;
+  left: 65%;
+  animation: glow 4s linear infinite, flightPath7 4s linear infinite;
+  animation-delay: -2s;
+}
+.orb-layer #gorb8 {
+  top: 13%;
+  left: 72%;
+  animation: glow 4s linear infinite, flightPath8 4s linear infinite;
+  animation-delay: -2.25s;
+}
+.orb-layer #gorb9 {
+  top: 30%;
+  left: 85%;
+  animation: glow 4s linear infinite, flightPath9 4s linear infinite;
+  animation-delay: -2.5s;
+}
+.orb-layer #gorb10 {
+  top: 7%;
+  left: 90%;
+  animation: glow 4s linear infinite, flightPath10 4s linear infinite;
+  animation-delay: -2.75s;
+}
+.hut-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-height: 850px;
+}
+.hut-area .hut {
+  x: -34px;
+  y: -15px;
+}
+.hut-area .hut svg {
+  width: 100%;
+  height: 100%;
+}
+.hut-area .title {
+  width: 100%;
+  position: relative;
+  right: 5%;
+  z-index: 100;
+}
+.hut-area .title .eve {
+  letter-spacing: 3px;
+  font-size: 50px;
+  font-family: 'bloodcrow', sans-serif;
+  margin-bottom: 10px;
+  text-shadow: 0 0 0.2em #04471C;
+}
+.hut-area .title .subtitle {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.hut-area .btn:hover {
+  cursor: pointer;
+}
+.hut-area .btn {
+  display: inline-block;
+  width: 121px;
+  color: #1D1C12;
+  padding: 2px;
+  margin-top: 45px;
+  margin-right: 5px;
+}
+.hut-area .btn .portfolio {
+  padding: 2px;
+  background: #B5D99C;
+  transform: rotate(4deg);
+}
+.hut-area .btn .about {
+  padding: 2px;
+  background: #B5D99C;
+  transform: rotate(-4deg);
+}
+@keyframes glow {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0.6;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+@keyframes seek {
+  0% {
+    transform: rotate(0deg);
+  }
+  12% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(7deg);
+  }
+  27% {
+    transform: rotate(7deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  42% {
+    transform: rotate(14deg);
+  }
+  45% {
+    transform: rotate(7deg);
+  }
+  57% {
+    transform: rotate(7deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  82% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(-7deg);
+  }
+  97% {
+    transform: rotate(-7deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes sway {
+  0% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(-9deg);
+  }
+  100% {
+    transform: rotate(9deg);
+  }
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio-container .item {
+  width: 200px;
+  height: 150px;
+  margin: 2px;
+}
+.portfolio-container .item .portfolio-thumb {
+  width: 100%;
+}

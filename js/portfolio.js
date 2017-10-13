@@ -1,6 +1,15 @@
 
 var items = [
   {
+    title: 'It\'s Raining Again...',
+    key: 'raining',
+    dataTarget: '.raining',
+    imageLarge: 'img/portfolio/nonnyfunc1215x648.jpg',
+    imageSmall: 'img/portfolio/raining800x600.png',
+    description: 'A WebVR scene designed to be experienced in Google Cardboard. Inspired by The Simpsons episode Treehouse of Horror V.',
+    link: 'http://solar-seer.glitch.me/'
+  },
+  {
     title: 'A Nonny Function - Poetry Generating Twitter Bot',
     key: 'nonnyfunc',
     dataTarget: '.nonnyfunc',
@@ -112,5 +121,11 @@ var items = [
   },
 ];
 
-var template = $('.template').html();
- $("#modalArea").html(_.template(template,{items:items}));
+for (i = 0; i < items.length; i++) {
+  $('.portfolio-container').append(
+    '<div class="item">' +
+      '<a href="' + items[i].link + '" target="_blank"><img class="portfolio-thumb" src="' + items[i].imageSmall + '" /></a>' +
+      // '<h4>' + items[i].title + '</h4>' +
+    '</div>'
+  );
+}
