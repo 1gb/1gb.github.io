@@ -24,8 +24,8 @@ var gorbs = {
     left: 58
   },
   gorb7: {
-    top: 35,
-    left: 65
+    top: 53,
+    left: 55
   },
   gorb8: {
     top: 13,
@@ -41,11 +41,11 @@ var gorbs = {
   }
 };
 
-
-var plusOrMinus = function() {
-  return Math.random() < 0.5 ? -1 : 1;
-};
-
+//
+// var plusOrMinus = function() {
+//   return Math.random() < 0.5 ? -1 : 1;
+// };
+//
 // for (i = 0; i < 10; i++) {
 //   var top1 = gorbs['gorb' + (i + 1)]['top'];
 //   var top = gorbs['gorb' + (i + 1)]['top'];

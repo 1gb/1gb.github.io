@@ -1,16 +1,4 @@
-// VARIABLES
-@middle-purple: #2F3061;
-@dark-purple: #0F0326;
-@dpurple: #422f36;
-@light-green: #B5D99C;
-@light-peach: #d9ae9c;
-@middle-green: #04471C;
-@dark-green: #0D2818;
-@orange-red: #E65F5C;
-@highlight: #FFFF82;
-@orange: #DBAF55;
-@orangebrown: #604804;
-@bg-color: #1D1C12;
+
 
 // TOP AREA
 #littlehut {
@@ -35,8 +23,8 @@
 
   .glowyorb {
     border-radius: 100%;
-    background-color: @light-green;
-    box-shadow: 0 0 30px 10px @light-green;
+    background-color: @main-color;
+    box-shadow: 0 0 30px 10px @main-color;
     height: 1px;
     width: 1px;
     opacity: 0.6;
@@ -70,7 +58,7 @@
   #gorb5 {
     top: 39%;
     left: 44%;
-    animation: flightPath7 10s linear infinite;
+    animation: flightPath5 10s linear infinite;
     animation-delay: -1.5s;
 
   }
@@ -81,10 +69,10 @@
     animation-delay: -1.75s;
   }
   #gorb7 {
-    top: 35%;
-    left: 65%;
+    top: 53%;
+    left: 55%;
     animation: glow 4s linear infinite, flightPath7 4s linear infinite;
-    animation-delay: -2s;
+    animation-delay: -2.75s;
   }
   #gorb8 {
     top: 13%;
@@ -102,7 +90,7 @@
     top: 7%;
     left: 90%;
     animation: glow 4s linear infinite, flightPath10 4s linear infinite;
-    animation-delay: -2.75s;
+    animation-delay: -2s;
   }
 }
 
@@ -127,14 +115,14 @@
     width: 100%;
     position: relative;
     right: 5%;
-    z-index: 100;
+    z-index: 3;
 
     .eve {
       letter-spacing: 3px;
       font-size: 50px;
       font-family: 'bloodcrow', sans-serif;
       margin-bottom: 10px;
-      text-shadow: 0 0 0.2em @middle-green;
+      text-shadow: 0 0 0.2em @orange;
       // animation: glow 8s linear infinite;
     }
 
@@ -158,13 +146,13 @@
 
     .portfolio {
       padding: 2px;
-      background: @light-green;
+      background: @main-color;
       transform: rotate(4deg);
     }
 
     .about {
       padding: 2px;
-      background: @light-green;
+      background: @main-color;
       transform: rotate(-4deg);
     }
   }
@@ -208,7 +196,7 @@
 
 @media (min-width: 880px) {
   .hut-area .title {
-    width: auto;
+    width: 50%;
   }
 }
 
@@ -236,9 +224,19 @@
     margin: 0 auto;
     float: none;
 
+    .main-icon {
+      img {
+        top: -6px;
+        float: left;
+      }
+    }
+
     .sidelinks {
       padding: 0;
-      border: 1px solid @light-green;
+      border: 1px solid @main-color;
+      border-right: none;
+      border-left: none;
+      margin-top: 136px;
 
       .portfolio, .about {
         padding: 6px 0;
@@ -246,11 +244,6 @@
       }
     }
   }
-
-  .about-section {
-    width: 100%;
-  }
-
 
   .social-buttons {
     list-style-type: none;

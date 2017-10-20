@@ -1,28 +1,15 @@
-// VARIABLES
-@middle-purple: #2F3061;
-@dark-purple: #0F0326;
-@dpurple: #422f36;
-@light-green: #B5D99C;
-@light-peach: #d9ae9c;
-@middle-green: #04471C;
-@dark-green: #0D2818;
-@orange-red: #E65F5C;
-@highlight: #FFFF82;
-@orange: #DBAF55;
-@orangebrown: #604804;
-@bg-color: #1D1C12;
 
 body {
   background: @bg-color;
-  background: -webkit-linear-gradient(@orange, @orangebrown, @bg-color); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(@orange, @orangebrown, @bg-color); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(@orange, @orangebrown, @bg-color); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(@orange, @orangebrown, @bg-color); /* Standard syntax */
+  background: -webkit-linear-gradient(@topColor, @middle, @bottomColor); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(@topColor, @middle, @bottomColor); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(@topColor, @middle, @bottomColor); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(@topColor, @middle, @bottomColor); /* Standard syntax */
 
   backgroud-size: cover cover;
   background-repeat: no-repeat;
   font-family: 'Courier New', Courier, monospace;
-  color: @light-green;
+  color: @main-color;
   text-align: center;
   height: 100%;
   margin: 0;
@@ -41,26 +28,28 @@ body {
 
 .side-menu {
   width: 150px;
+  height: 100%;
   display: flex;
+  float: left;
   flex-direction: column;
   justify-content: center;
-  margin: 50px 25px;
-  float: left;
+  margin-top: 50px;
+  margin-right:42px;
 
   .about, .portfolio {
     margin-top: 5px;
   }
 
   .sidelinks {
-    margin-top: 15px;
+    margin-top: 80px;
     padding-top: 15px;
     padding-bottom: 15px;
-    border-right: 1px solid @light-green;
+    border-right: 1px solid @main-color;
   }
 
   .active {
     color: @bg-color;
-    background-color: @light-green;
+    background-color: @main-color;
   }
 
   .main-icon {
@@ -70,26 +59,31 @@ body {
     letter-spacing: 8px;
     font-size: 40px;
     font-family: 'bloodcrow', sans-serif;
-    color: @light-green;
+    color: @main-color;
     cursor: pointer;
 
-    svg {
-      width: 75px;
-      height: 75px;
+    img {
+      position: relative;
+      top: -55px;
+      left: -13px;
+      width: 200px;
     }
   }
+}
 
-  .main-icon:hover {
-    text-shadow: 0 0 0.2em @highlight;
-  }
+.page-heading {
+  letter-spacing: 3px;
+  font-size: 50px;
+  font-family: 'bloodcrow', sans-serif;
+  padding: 50px 0 20px;
+  text-shadow: 0 0 0.2em @orange;
 }
 
 .about-section, .portfolio-section {
   line-height: 1.5;
-  margin-top: 50px;
+  margin: 0 50px;
   font-size: 16px;
-  display: inline-block;
-  width: 70%;
+  display: inherit;
   min-height: 350px;
 
   .email {
@@ -101,30 +95,6 @@ body {
     color: @bg-color;
   }
 }
-
-// DUNNO MAYBE DELETE
-
-//
-// .portfolio-container {
-//   width: 88%;
-//   margin: 0 auto;
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//
-//     .box {
-//       height: 120px;
-//       width: 220px;
-//       margin: 20px;
-//       border-radius: 5px;
-//       background-color: @middle-green;
-//       color: white;
-//       text-align: center;
-//       vertical-align: middle;
-//       line-height: 120px;
-//     }
-// }
 
 // SOCIAL LINKS
 
@@ -148,3 +118,20 @@ body {
     display: inline-block;
   }
 }
+
+
+@media (max-width: 600px) {
+
+  .page-heading {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    margin: auto;
+    font-size: 40px;
+  }
+}
+
+@import "variables.less";
+@import "glorbs.less";
+@import "homepage.less";
+@import "portfolio.less";
