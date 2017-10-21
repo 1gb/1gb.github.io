@@ -45,6 +45,12 @@ module.exports = function(grunt) {
             dest: 'public/build/img/',    // destination folder
             expand: true
           },
+          favicon: {
+            cwd: 'favicon/',
+            src: '**/*.*',
+            dest: 'public/build/',    // destination folder
+            expand: true
+          },
           fav: {
             cwd: 'favicon/',
             src: '**/*.*',
