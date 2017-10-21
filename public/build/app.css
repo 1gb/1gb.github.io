@@ -1,12 +1,12 @@
 body {
   background: #1D1C12;
-  background: -webkit-linear-gradient(#3B0425, #922907, #0F0326);
+  background: -webkit-linear-gradient(#3B0425, #BA5E69, #0F0326);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#3B0425, #922907, #0F0326);
+  background: -o-linear-gradient(#3B0425, #BA5E69, #0F0326);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#3B0425, #922907, #0F0326);
+  background: -moz-linear-gradient(#3B0425, #BA5E69, #0F0326);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#3B0425, #922907, #0F0326);
+  background: linear-gradient(#3B0425, #BA5E69, #0F0326);
   /* Standard syntax */
   backgroud-size: cover cover;
   background-repeat: no-repeat;
@@ -607,7 +607,7 @@ body a {
   font-size: 50px;
   font-family: 'bloodcrow', sans-serif;
   margin-bottom: 10px;
-  text-shadow: 0 0 0.2em #DBAF55;
+  text-shadow: 0 0 0.2em #444;
 }
 .hut-area .title .subtitle {
   font-size: 20px;
