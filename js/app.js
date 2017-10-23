@@ -124,7 +124,7 @@ var lines = [
   '                 ',
   '%c                 \n' +
   '    \\   /V\\      \n' +
-  '     ) (^ ^) ♥   \n' +
+  '     ) (^ ^) %c♥%c   \n' +
   '    (  /   )/    \n' +
   '     \\(__)|      \n' +
   '                 \n' +
@@ -133,13 +133,14 @@ var lines = [
   '                 '
 ];
 
-var style = 'color: white; background-color: black; font-size:15px;';
+var style = 'color: white; background-color: black; font-size: 15px;';
+var heartStyle = 'color: red; background-color: black; font-size: 15px;';
 
 var hi = function() {
   function start(counter){
-    if (counter === lines.length - 1) {
+     if (counter === lines.length - 1) {
       console.clear();
-      console.log(lines[lines.length - 1], style);
+      console.log(lines[lines.length - 1], style, heartStyle, style);
     } else if(counter < lines.length - 1){
       setTimeout(function(){
         counter++;
