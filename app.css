@@ -848,6 +848,10 @@ body a {
   text-align: left;
   margin: 10px 30px 0;
 }
+.modal .description a {
+  color: #FFFF82;
+  text-decoration: underline;
+}
 .modal .tools {
   margin: 18px 30px;
   text-align: left;
