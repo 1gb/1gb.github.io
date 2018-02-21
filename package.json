@@ -19,9 +19,8 @@
   },
   "scripts": {
     "start": "npm install && npm run build && node src/index.js",
-    "dev": "npm install && npm run grunt-dev-async && node src/index.js",
-    "build": "grunt build",
-    "grunt-dev-async": "grunt dev &"
+    "dev": "npm install && node src/index.js",
+    "build": "grunt build"
   },
   "repository": {
     "type": "git",
