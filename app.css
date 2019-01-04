@@ -1,13 +1,5 @@
 body {
-  background: #1D1C12;
-  background: -webkit-linear-gradient(#3B0425, #BA5E69, #0F0326);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#3B0425, #BA5E69, #0F0326);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#3B0425, #BA5E69, #0F0326);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#3B0425, #BA5E69, #0F0326);
-  /* Standard syntax */
+  background: #111111;
   backgroud-size: cover cover;
   background-repeat: no-repeat;
   font-family: 'Courier New', Courier, monospace;
@@ -46,7 +38,7 @@ body a {
   border-right: 1px solid #FFC86F;
 }
 .side-menu .active {
-  color: #1D1C12;
+  color: #111111;
   background-color: #FFC86F;
 }
 .side-menu .main-icon {
@@ -87,7 +79,7 @@ body a {
 .about-section .email:hover,
 .portfolio-section .email:hover {
   background-color: #DBAF55;
-  color: #1D1C12;
+  color: #111111;
 }
 .btnL img {
   transform: rotate(4deg);
@@ -495,6 +487,10 @@ body a {
     left: 90%;
   }
 }
+#main-content {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
 #littlehut {
   transform-origin: 597px 405px;
   animation: sway 8s ease-in-out infinite;
@@ -619,7 +615,7 @@ body a {
 .hut-area .btn {
   display: inline-block;
   width: 121px;
-  color: #1D1C12;
+  color: #111111;
   padding: 2px;
   margin-top: 45px;
   margin-right: 5px;
